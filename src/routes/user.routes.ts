@@ -10,7 +10,7 @@ const userRouter = Router();
 
 userRouter.get("/", getAllUser);
 userRouter.post("/", createUser);
-userRouter.patch("/", updateUser);
+userRouter.patch("/:userId", updateUser);
 userRouter.delete("/:userId", deleteUser);
 
 export default userRouter;
